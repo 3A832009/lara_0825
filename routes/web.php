@@ -21,11 +21,13 @@ Route::get('/', function () {
 //    $post->content='test content';
 //    $post->save();
 
+    $posts=Post::all();
+    dd($posts);
 
-    Post::create([
-        'title'=>'test title',
-        'content'=>'test content',
-    ]);
+//    Post::create([
+//        'title'=>'test title',
+//        'content'=>'test content',
+//    ]);
 
 });
 
